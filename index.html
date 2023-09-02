@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Twitch Pet Idle Game</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="pet">
+        <img id="petImage" src="pet.png" alt="Pet Image">
+        <div id="levelDisplay">Level: <span id="level"></span></div>
+        
+        <div id="player-health">Health: 100</div>
+        <div id="energy">Energy: 100%</div>
+        <div id="happiness">Happiness: 100%</div>
+        <div id="attackValue">Attack: 10</div>
+        <div id="defenseValue">Defense: 5</div>
+        <div id="resourceCount">0</div>
+        <div id="gold">Gold: <span id="goldCount">0</span></div> 
+        <div id="combat-level">Combat Level: <span id="combat-level-value">1</span></div>
+        <div id="combat-experience">Combat XP: <span id="combat-experience-value">0</span></div>
+        <button id="openInventoryButton">Open Inventory</button>
+        <div id="inventoryContainer" style="display: none;">
+            <button id="closeInventoryButton">Close</button>
+            <div id="inventory"></div>
+        </div>
+        <div id="abilities">
+            <!-- Display abilities here -->
+        </div>
+        
+        <button id="feed">Feed</button>
+        <button id="play">Play</button>
+
+        <!-- Add combat screen elements -->
+        <button id="explore">Explore</button>
+
+        <!-- Combat screen -->
+        <div id="combat-screen">
+            Enemy Health: 
+            <!-- Add enemy health display element -->
+            <button id="attackButton" disabled>Attack</button>
+            <!-- Add other combat screen elements -->
+        </div>
+<!-- Player Health Bar -->
+<div id="player-health-bar" class="health-bar">
+    <div id="player-health-fill" class="health-fill"></div>
+</div>
+
+<!-- Enemy Health Bar -->
+<div id="enemy-health-bar" class="health-bar">
+    <div id="enemy-health-fill" class="health-fill"></div>
+</div>
+
+    </div>
+
+
+
+    <!-- Add script tag for JavaScript code -->
+    <script src="script.js"></script>
+</body>
+</html>
